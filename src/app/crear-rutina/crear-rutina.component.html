@@ -1,1 +1,36 @@
-<p>crear-rutina works!</p>
+<form [formGroup]='rutinaForm' (ngSubmit)=submit()>
+    <div class="">
+        <mat-card class="container">
+            <mat-card-title>Cargar Rutina</mat-card-title>
+
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre Rutina: </mat-label>
+                    <mat-select matNativeControl required formControlName="nombreRutina">
+                        <mat-option value="Biceps">Biceps</mat-option>
+                        <mat-option value="Triceps">Triceps</mat-option>
+                        <mat-option value="Piernas">Piernas</mat-option>
+                        <mat-option value="Pecho">Pecho</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Repeticiones: </mat-label>
+                    <input type="number" formControlName="repeticiones" matInput placeholder="Repeticiones">
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Peso: </mat-label>
+                    <input type="number" formControlName="peso" matInput placeholder="Peso">
+                </mat-form-field>
+            </div>
+            <mat-card-actions>
+                <div>
+                    <button mat-raised-button color="primary">Guardar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</form>

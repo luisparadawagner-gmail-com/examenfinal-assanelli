@@ -1,0 +1,7 @@
+[
+    { "nombre": "Luis", "apellido": "Parada", "direccion": "Avenida argentina 455", "edad": 44, "fechaDeNacimiento": "15/11/1975", "nombreRutina": "Pecho", "repeticiones": 15, "peso": 25 },
+    { "nombre": "Nico", "apellido": "Assanelli", "direccion": "Lanin 500", "edad": 25, "fechaDeNacimiento": "15/11/1999", "nombreRutina": "Biceps", "repeticiones": 10, "peso": 15 },
+    { "nombre": "Laura", "apellido": "Vidal", "direccion": "JB Justo 100", "edad": 60, "fechaDeNacimiento": "15/11/1955", "nombreRutina": "Piernas", "repeticiones": 20, "peso": 50 },
+    { "nombre": "Gaby", "apellido": "Alcantu", "direccion": "Rio neuquen 15", "edad": 46, "fechaDeNacimiento": "15/11/1974", "nombreRutina": "Triceps", "repeticiones": 10, "peso": 15 }
+
+]

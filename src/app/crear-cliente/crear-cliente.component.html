@@ -1,1 +1,49 @@
-<p>crear-cliente works!</p>
+<form [formGroup]='clienteForm' (ngSubmit)=submit()>
+    <div class="">
+        <mat-card class="container">
+            <mat-card-title>Cargar Cliente</mat-card-title>
+
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre: </mat-label>
+                    <input type="text" formControlName="nombre" matInput placeholder="Nombre">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Apellido: </mat-label>
+                    <input type="text" formControlName="apellido" matInput placeholder="Apellido">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Edad: </mat-label>
+                    <input type="number" formControlName="edad" matInput placeholder="edad">
+
+                </mat-form-field>
+            </div>
+            <div class="container">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Edad: </mat-label>
+                    <input type="text" formControlName="direccion" matInput placeholder="Direccion">
+
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Fecha Nacimiento</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="fechaDeNacimiento" />
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <mat-card-actions>
+                <div>
+                    <button mat-raised-button color="primary">Guardar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</form>
